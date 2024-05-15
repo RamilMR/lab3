@@ -1,0 +1,12 @@
+def hasil_hesabla(A):
+    hasil_siyahı = []
+    for sira in range(len(A)):
+        hasil = 1
+        for element in A[sira]:
+            hasil *= element
+        hasil_siyahı.append(hasil)
+    return hasil_siyahı
+
+# Test üçün nümunə massiv
+A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(hasil_hesabla(A))  # Output: [6, 120, 504]
